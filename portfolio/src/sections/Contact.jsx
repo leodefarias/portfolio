@@ -52,9 +52,9 @@ const Contact = () => {
     }
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="contact">
         <div className="relative min-h-screen flex items-center justify-center flex-col">
-            <img src="/assets/terminal.png" alt="terminal background" className="absolute inset-0 min-h-screen" />
+            <img src="/assets/terminal.png" alt="terminal background" className="absolute inset-0 min-h-screen mx-auto max-h-0" />
             <div className="contact-container py-4">
                 <h3 className="head-text">Let's talk</h3>
             <p className="text-lg text-white-600 mt-3">
@@ -62,7 +62,7 @@ const Contact = () => {
                 life, I’m here to help.
             </p>
 
-            <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
+            <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col xl:space-y-3">
                 <label className="space-y-3">
                 <span className="field-label">Full Name</span>
                 <input
